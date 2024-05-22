@@ -65,21 +65,22 @@ function Todos() {
   const isCompleted = useRef(false);
 
   function createTodo() {
-    todoId.current = nanoid();
-    todoContent.current = todoInput.current.value;
-    dispatch(
-      addTodo({
-        todoId: todoId.current,
-        todoContent: todoContent.current,
-        isCompleted: isCompleted.current,
-      })
-    );
+    if (todoInput.current.value) {
+      todoId.current = nanoid();
+      todoContent.current = todoInput.current.value;
+      dispatch(
+        addTodo({
+          todoId: todoId.current,
+          todoContent: todoContent.current,
+          isCompleted: isCompleted.current,
+        })
+      );
+    }
   }
 
   useEffect(() => {
     dispatch(filterTodo());
   }, [allTodos]);
-  
 
   return (
     <>
