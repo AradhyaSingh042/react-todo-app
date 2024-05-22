@@ -79,10 +79,11 @@ function Todos() {
   useEffect(() => {
     dispatch(filterTodo());
   }, [allTodos]);
+  
 
   return (
     <>
-      <div className="todos flex flex-col w-8/12 max-w-[672px] absolute top-32 gap-5 pb-8">
+      <div className="todos flex flex-col w-11/12 max-w-[672px] absolute top-32 gap-5 pb-8">
         <div className="w-full py-2 flex justify-between items-center px-2">
           <h2 className="text-white uppercase text-4xl font-semibold tracking-wider">
             Todo
