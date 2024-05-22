@@ -84,7 +84,7 @@ function Todos() {
 
   return (
     <>
-      <div className="todos flex flex-col w-10/12 md:max-w-[48%] absolute top-5 lg:top-32 gap-5 pb-8">
+      <div className="todos flex flex-col w-10/12 md:max-w-[46%] absolute top-5 lg:top-28 gap-5 pb-8">
         <div className="w-full py-2 flex justify-between items-center">
           <h2 className="text-white uppercase text-4xl font-semibold tracking-wider">
             Todo
