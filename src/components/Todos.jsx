@@ -84,8 +84,8 @@ function Todos() {
 
   return (
     <>
-      <div className="todos flex flex-col w-11/12 max-w-[672px] absolute top-32 gap-5 pb-8">
-        <div className="w-full py-2 flex justify-between items-center px-2">
+      <div className="todos flex flex-col w-10/12 md:max-w-[48%] absolute top-5 lg:top-32 gap-5 pb-8">
+        <div className="w-full py-2 flex justify-between items-center">
           <h2 className="text-white uppercase text-4xl font-semibold tracking-wider">
             Todo
           </h2>
@@ -101,7 +101,7 @@ function Todos() {
         <div className="flex flex-row gap-4 relative shadow-md ">
           <input
             type="text"
-            maxLength="40"
+            maxLength="42"
             ref={todoInput}
             placeholder="Create a new todo..."
             className="todo-input w-full py-4 bg-white px-4 rounded-xl text-xl placeholder:relative placeholder:top-[0.5px]"
