@@ -89,7 +89,7 @@ function Todo({ todoData }) {
           value={todoData.todoContent}
           ref={todoField}
           readOnly
-          className={`w-full py-4 bg-white dark:bg-[#25273C] dark:text-white pl-14 rounded-lg text-xl text-[#535353] cursor-pointer focus:outline-none focus:bg-slate-300 ${
+          className={`w-full py-4 bg-white dark:bg-[#25273C] dark:text-white pl-14 rounded-lg text-xl text-[#535353] cursor-pointer focus:outline-none focus:bg-slate-300 dark:focus:bg-slate-900 ${
             todoData.isCompleted ? "line-through" : "no-underline"
           }`}
         />
