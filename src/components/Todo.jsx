@@ -95,21 +95,21 @@ function Todo({ todoData }) {
         />
         <div className="absolute right-3 top-1/2 translate-y-[-50%] flex flex-row items-center gap-2">
           <button
-            className="bg-violet-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center"
+            className="bg-violet-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center hover:bg-violet-500 transition-all duration-200"
             onClick={modifyTodo}
           >
             <FaEdit fontSize="1.5rem" />
           </button>
           {isEdited ? (
             <button
-              className="bg-cyan-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center"
+              className="bg-cyan-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center hover:bg-cyan-500 transition-all duration-200"
               onClick={setTodo}
             >
               <IoAddCircleOutline fontSize="1.5rem" />
             </button>
           ) : (
             <button
-              className="bg-red-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center"
+              className="bg-red-400 text-white py-2 px-3 rounded-lg font-semibold flex justify-center items-center hover:bg-red-500 transition-all duration-200"
               onClick={deleteTodo}
             >
               <MdDelete fontSize="1.5rem" />

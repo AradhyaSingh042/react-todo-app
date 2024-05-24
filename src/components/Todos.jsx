@@ -108,7 +108,7 @@ function Todos() {
           />
           <div className="absolute right-3 top-1/2">
             <button
-              className=" translate-y-[-50%] bg-green-400 text-white py-2 px-3.5 rounded-lg font-semibold"
+              className="translate-y-[-50%] bg-green-400 text-white py-2 px-3.5 rounded-lg font-semibold hover:bg-green-500 transition-all duration-200"
               onClick={createTodo}
             >
               Create
